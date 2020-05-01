@@ -4,6 +4,6 @@ const repeatString = function() {
         text = hey.concat('hey');
         return hey
     }
-    return strings(hey,3);
+    return strings(hey);
 }
 module.exports = repeatString
