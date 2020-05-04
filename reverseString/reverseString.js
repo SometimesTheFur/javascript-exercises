@@ -1,8 +1,9 @@
 const reverseString = function(str) {
-    let splitString = str.split('');
-    let reverseArray = splitString.reverse();
-    let joinArray = reverseArray.join('');
-    return joinArray;
+    let revString = '';
+    for(let i = (str.length -1); i >= 0; --i){
+        revString += str[i];
+    }
+    return revString;
 }
 reverseString('hello');
 reverseString('hello there');
