@@ -1,6 +1,7 @@
 const sumAll = function(min, max) {
     if (min < 0 || max < 0) return "ERROR";
-    //if (typeOf(min) !== Number || typeOf(max) !== Number) return "ERROR";
+    //if (isNaN(min) || isNaN(max)) return "ERROR"; This only worked for the string test, but not the last test that included an object.
+    if (typeof min !== 'number' || typeof max !== 'number') return "ERROR";
     if (min > max) {
         let x = min;
         min = max;
