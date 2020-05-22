@@ -1,14 +1,8 @@
-function add () {
-	
-}
+add = (a,b) => (a + b);
 
-function subtract () {
-	
-}
+subtract = (a,b) => (a - b);
 
-function sum () {
-	
-}
+sum = ([]) => [].reduce((a,b) => (a + b), 0);
 
 function multiply () {
 	
