@@ -2,19 +2,13 @@ add = (a,b) => (a + b);
 
 subtract = (a,b) => (a - b);
 
-sum = ([]) => [].reduce((a,b) => (a + b), 0);
+sum = ([...args]) => ([...args].reduce((a,b) => a + b, 0));
 
-function multiply () {
-	
-}
+multiply = ([...args]) => ([...args].reduce((a,b) => a * b, 1));
 
-function power() {
-	
-}
+power = (a,b) => Math.pow(a,b);
 
-function factorial() {
-	
-}
+factorial = (n) => (n ? n * factorial(n - 1) : 1);
 
 module.exports = {
 	add,
