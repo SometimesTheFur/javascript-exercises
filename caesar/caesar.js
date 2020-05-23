@@ -1,5 +1,6 @@
-const caesar = function() {
-
+const caesar = function(char, Shift) {
+    
 }
+
 
 module.exports = caesar
