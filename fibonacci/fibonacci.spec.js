@@ -19,7 +19,7 @@ describe('fibonacci', function() {
   xit('doesn\'t accept negatives', function() {
     expect(fibonacci(-25)).toEqual("OOPS");
   });
-  xit('DOES accept strings', function() {
+  it('DOES accept strings', function() {
     expect(fibonacci("1")).toEqual(1);
   });
   xit('DOES accept strings', function() {
