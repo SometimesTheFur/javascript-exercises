@@ -1,8 +1,9 @@
 const fibonacci = function(fib) {
     const n = parseInt(fib);
-    (n === 1) ? 1 : F;
+    const s = n.split();
+    (s === 1) ? 1 : s.push(s[s.length - 1] + s[s.length - 2]);
     //const s = (n - 1);
-    const F = n.push(n[n.length - 1] + n[n.length - 2])
+
     
 }
 
