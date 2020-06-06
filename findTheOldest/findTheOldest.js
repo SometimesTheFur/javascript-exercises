@@ -1,12 +1,9 @@
-let findTheOldest = (arr) => {
-   const getAge = arr.reduce((person) => {
-         (person.yearOfDeath - person.yearOfBirth);
-    }, 0);
-    console.log(getAge);
-    //const getAge = person.yearOfDeath - person.yearOfBirth;
-    // const oldest = getAge.reduce((a,b) => {
-    //     return a + (b.yearOfDeath - b.yearOfBirth);
-
-    // }, 0);
-}; 
+let findTheOldest = function(arr) {
+    arr.sort((a,b) => {
+        const last = a.yearOfDeath - a.yearOfBirth;
+        const next = b.yearOfDeath - a.yearOfBirth;
+        return last > next ? -1 : 1;
+    });
+    //console.log(oldest)
+};
 module.exports = findTheOldest
