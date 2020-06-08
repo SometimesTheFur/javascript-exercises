@@ -1,16 +1,15 @@
-const findTheOldest = (arr) => {
+const findTheOldest = function(arr) {
     return arr.reduce((a,b) => {
-        const first = getAge(a.yearOfDeath, a.yearOfBirth);
-        const next = getAge(b.yearOfDeath, b.yearOfBirth);
+        const first = getAge(a.yearOfBirth, a.yearOfDeath);
+        const next = getAge(b.yearOfBirth, b.yearOfDeath);
         return first < next ? b : a;
-    });
-    
+    }); 
 };
 
-const getAge = (yearOfBirth, yearOfDeath) => {
+const getAge = function(yearOfBirth, yearOfDeath) {
     if(!yearOfDeath) {
-       return yearOfDeath = new Date().getFullYear(); 
+       yearOfDeath = new Date().getFullYear(); 
     }
     return yearOfDeath - yearOfBirth;  
-};
+}; console.log(getAge())
 module.exports = findTheOldest
