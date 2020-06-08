@@ -2,7 +2,7 @@ const findTheOldest = function(arr) {
     return arr.reduce((a,b) => {
         const first = getAge(a.yearOfBirth, a.yearOfDeath);
         const next = getAge(b.yearOfBirth, b.yearOfDeath);
-        return first < next ? b : a;
+        return first > next ? a : b;
     }); 
 };
 
